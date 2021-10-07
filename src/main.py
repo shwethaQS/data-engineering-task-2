@@ -18,7 +18,7 @@ def myjob(spark: SparkSession, **kwargs):
         **kwargs - keyword arguments from spark-submit
 
     """
-    df = spark.read.csv("spark-data/Medals.csv")
+    df = spark.read.csv("spark-data/climatewatch-usemissions.csv")
 
     df.show()
 
